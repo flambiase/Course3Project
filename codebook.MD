@@ -1,14 +1,15 @@
+#UCI HAR Dataset Prep
 ## Code Book
-#Introduction
+###Introduction
 
-#Study Design
+###Study Design
 
-#Data Preparation
+###Data Preparation
 
 
-#Output File
+###Output File
 
-#Variable Code Book
+###Variables
 Variable Label:
 Format:
 Units:
