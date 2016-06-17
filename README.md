@@ -43,12 +43,5 @@ Finally, the aggregate function is used to summarize the raw data by the activit
 
 ## Output data
 Location:
-Code book:
+Code book detailing structure and contents:
 
-
-
-
-
-## Output
-Summary data set is available here:
-Its structure and contents are detailed here:
