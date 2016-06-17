@@ -18,9 +18,7 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 The ZIP file provided includes a README file describing the raw datasets in detail.
 
 ## Method
-run_analysis.R was prepared to read and process the data. This program assumes the
-user has downloaded and unpacked the ZIP file from the site listed above and has
-set her working directory appropriately.
+run_analysis.R was prepared to download, unzip, read, and process the data. 
 
 The program loads the plyr, dplyr, and stringr packages, all of which will be used
 to parse and summarize the raw data. Eight TXT files are read from the raw data:
