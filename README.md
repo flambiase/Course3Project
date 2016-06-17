@@ -17,6 +17,7 @@ The ZIP file provided includes a README file describing the raw datasets in deta
 
 ## Method
 run_analysis.R was prepared to download, unzip, read, and process the data. 
+
 Program location: https://github.com/flambiase/Course3Project/blob/master/run_analysis.R
 
 The program loads the plyr, dplyr, and stringr packages, all of which will be used
@@ -40,5 +41,6 @@ Finally, the aggregate function is used to summarize the raw data by the activit
 
 ## Output data
 Location: https://github.com/flambiase/Course3Project/blob/master/averagemeasures.csv
+
 Code book detailing structure and contents: https://github.com/flambiase/Course3Project/blob/master/codebook.MD
 
