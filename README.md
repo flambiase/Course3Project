@@ -1,9 +1,7 @@
 # UCI HAR Dataset Prep
 ## Course project for Getting and Cleaning Data
 
-The purpose of this program is to read and merge two datasets containing data 
-from the accelerometers of Samsung Galaxy S smartphones in order to prepare a
-data set of averages of the measurement variables for each activity and subject.
+The purpose of this program is to read and merge two datasets containing data from the accelerometers of Samsung Galaxy S smartphones in order to prepare a data set of averages of the measurement variables for each activity and subject.
 
 The program will identify from a list of measurements all those relating to means or standard deviations. These will be summarized in the output data set.
 
@@ -19,6 +17,7 @@ The ZIP file provided includes a README file describing the raw datasets in deta
 
 ## Method
 run_analysis.R was prepared to download, unzip, read, and process the data. 
+Program location: https://github.com/flambiase/Course3Project/blob/master/run_analysis.R
 
 The program loads the plyr, dplyr, and stringr packages, all of which will be used
 to parse and summarize the raw data. Eight TXT files are read from the raw data:
@@ -40,6 +39,6 @@ The 561-value measurement string field in the meas dataset is then parsed into a
 Finally, the aggregate function is used to summarize the raw data by the activity name and subject id, calculating the mean of each feature measurement. Column names are updated to indicate that each is the mean of the raw measurement. This final dataset is written to a CSV.
 
 ## Output data
-Location:
-Code book detailing structure and contents:
+Location: https://github.com/flambiase/Course3Project/blob/master/averagemeasures.csv
+Code book detailing structure and contents: https://github.com/flambiase/Course3Project/blob/master/codebook.MD
 
