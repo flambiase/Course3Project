@@ -20,7 +20,7 @@ https://github.com/flambiase/Course3Project/blob/master/averagemeasures.csv
 
 ###Variables
 Variable Label: activity                         
-Format: Factor 
+Format: Factor  
 Comments: Label identifying the activity being performed while measurements were recorded.
 
 Variable Label: subjectid                        
@@ -28,19 +28,19 @@ Format: int
 Comments: Identifies the subject performing the activity being measured.
 
 Variable Label: meanoftbodyacc-mean()-x          
-Format: num 
+Format: num  
 Comment: Mean of average measurements of portion of acceleration attributable to subject movement along the x axis.
 
 Variable Label: meanoftbodyacc-mean()-y          
-Format: num 
+Format: num  
 Comment: Mean of average measurements of portion of acceleration attributable to subject movement along the y axis.
 
 Variable Label: meanoftbodyacc-mean()-z          
-Format: num 
+Format: num  
 Comment: Mean of average measurements of portion of acceleration attributable to subject movement along the z axis.
 
 Variable Label: meanoftbodyacc-std()-x           
-Format: num  
+Format: num   
 Comment: Mean of standard deviation of measurements of portion of acceleration attributable to subject movement along the x axis.
 
 Variable Label: meanoftbodyacc-std()-y           
