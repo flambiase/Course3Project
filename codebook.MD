@@ -21,275 +21,275 @@ https://github.com/flambiase/Course3Project/blob/master/averagemeasures.csv
 ###Variables
 Variable Label: activity                         
 Format: Factor  
-Comments: Label identifying the activity being performed while measurements were recorded.
+Comment: Label identifying the activity being performed while measurements were recorded.
 
 Variable Label: subjectid                        
 Format: int  
-Comments: Identifies the subject performing the activity being measured.
+Comment: Identifies the subject performing the activity being measured.
 
 Variable Label: meanoftbodyacc-mean()-x          
 Format: num  
 Comment: Mean of average measurements of portion of acceleration attributable to subject movement along the x axis.
 
 Variable Label: meanoftbodyacc-mean()-y          
-Format: num  
+Format: num   
 Comment: Mean of average measurements of portion of acceleration attributable to subject movement along the y axis.
 
 Variable Label: meanoftbodyacc-mean()-z          
-Format: num  
+Format: num   
 Comment: Mean of average measurements of portion of acceleration attributable to subject movement along the z axis.
 
 Variable Label: meanoftbodyacc-std()-x           
-Format: num   
+Format: num    
 Comment: Mean of standard deviation of measurements of portion of acceleration attributable to subject movement along the x axis.
 
 Variable Label: meanoftbodyacc-std()-y           
-Format: num 
+Format: num  
 Comment: Mean of standard deviation of measurements of portion of acceleration attributable to subject movement along the y axis.
 
 Variable Label: meanoftbodyacc-std()-z           
-Format: num 
+Format: num  
 Comment: Mean of standard deviation of measurements of portion of acceleration attributable to subject movement along the z axis.
 
 Variable Label: meanoftgravityacc-mean()-x       
-Format: num  
+Format: num   
 Comment: Mean of average measurements of portion of acceleration attributable to gravity along the x axis.
 
 Variable Label: meanoftgravityacc-mean()-y       
-Format: num  
+Format: num   
 Comment: Mean of average measurements of portion of acceleration attributable to gravity along the y axis.
 
 Variable Label: meanoftgravityacc-mean()-z       
-Format: num 
+Format: num  
 Comment: Mean of average measurements of portion of acceleration attributable to gravity along the z axis.
 
 Variable Label: meanoftgravityacc-std()-x        
-Format: num  
+Format: num   
 Comment: Mean of standard deviation of measurements of portion of acceleration attributable to gravity along the x axis.
 
 Variable Label: meanoftgravityacc-std()-y        
-Format: num  
+Format: num   
 Comment: Mean of standard deviation of measurements of portion of acceleration attributable to gravity along the y axis.
 
 Variable Label: meanoftgravityacc-std()-z        
-Format: num  
+Format: num   
 Comment: Mean of standard deviation of measurements of portion of acceleration attributable to gravity along the z axis.
 
 Variable Label: meanoftbodyaccjerk-mean()-x      
-Format: num 
+Format: num  
 Comment: mean of average jerk signals measured by linear acceleration and angular velocity along the x axis.
 
 Variable Label: meanoftbodyaccjerk-mean()-y      
-Format: num  
+Format: num   
 Comment: mean of average jerk signals measured by linear acceleration and angular velocity along the y axis.
 
 Variable Label: meanoftbodyaccjerk-mean()-z      
-Format: num  
+Format: num   
 Comment: mean of average jerk signals measured by linear acceleration and angular velocity along the z axis.
 
 Variable Label: meanoftbodyaccjerk-std()-x       
-Format: num  
+Format: num   
 Comment: mean of standard deviation of jerk signals measured by linear acceleration and angular velocity along the x axis.
 
 Variable Label: meanoftbodyaccjerk-std()-y       
-Format: num  
+Format: num   
 Comment: mean of standard deviation of jerk signals measured by linear acceleration and angular velocity along the y axis.
 
 Variable Label: meanoftbodyaccjerk-std()-z       
-Format: num  
+Format: num   
 Comment: mean of standard deviation of jerk signals measured by linear acceleration and angular velocity along the z axis.
 
 Variable Label: meanoftbodygyro-mean()-x         
-Format: num
+Format: num 
 Comment: mean of average angular velocity along the x axis.
 
 Variable Label: meanoftbodygyro-mean()-y         
-Format: num  
+Format: num   
 Comment: mean of average angular velocity along the x axis.
 
 Variable Label: meanoftbodygyro-mean()-z         
-Format: num  
+Format: num   
 Comment: mean of average angular velocity along the x axis.
 
 Variable Label: meanoftbodygyro-std()-x          
-Format: num 
+Format: num  
 Comment: mean of standard deviation of angular velocity along the x axis.
 
 Variable Label: meanoftbodygyro-std()-y          
-Format: num
+Format: num 
 Comment: mean of standard deviation of angular velocity along the y axis.
 
 Variable Label: meanoftbodygyro-std()-z          
-Format: num  
+Format: num   
 Comment: mean of standard deviation of angular velocity along the z axis.
 
 Variable Label: meanoftbodygyrojerk-mean()-x     
-Format: num 
+Format: num  
 Comment: mean of average jerk signals along the x axis.
 
 Variable Label: meanoftbodygyrojerk-mean()-y     
-Format: num  
+Format: num   
 Comment: mean of average jerk signals along the y axis.
 
 Variable Label: meanoftbodygyrojerk-mean()-z     
-Format: num  
+Format: num   
 Comment: mean of average jerk signals along the z axis.
 
 Variable Label: meanoftbodygyrojerk-std()-x      
-Format: num 
+Format: num  
 Comment: mean of standard deviation of jerk signals along the x axis.
 
 Variable Label: meanoftbodygyrojerk-std()-y      
-Format: num 
+Format: num  
 Comment: mean of standard deviation of jerk signals along the y axis.
 
 Variable Label: meanoftbodygyrojerk-std()-z      
-Format: num  
+Format: num   
 Comment: mean of standard deviation of jerk signals along the z axis.
 
 
 Variable Label: meanoftbodyaccmag-mean()         
-Format: num 
+Format: num  
 Comment: mean of average body acceleration magnitude
 
 Variable Label: meanoftbodyaccmag-std()          
-Format: num  
+Format: num   
 Comment: mean of standard deviation of body acceleration magnitude
 
 Variable Label: meanoftgravityaccmag-mean()      
-Format: num  
+Format: num   
 Comment: mean of average gravity acceleration magnitude
 
 Variable Label: meanoftgravityaccmag-std()       
-Format: num  
+Format: num   
 Comment: mean of standard deviation of gravity acceleration magnitude
 
 Variable Label: meanoftbodyaccjerkmag-mean()     
-Format: num 
+Format: num   
 Comment: mean of average jerk acceleration magnitude 
 
 Variable Label: meanoftbodyaccjerkmag-std()      
-Format: num  
+Format: num   
 Comment: mean of standard deviation of jerk acceleration magnitude 
 
 Variable Label: meanoftbodygyromag-mean()        
-Format: num  
+Format: num   
 Comment: mean of average angular velocity magnitude
 
 Variable Label: meanoftbodygyromag-std()         
-Format: num 
+Format: num  
 Comment: mean of standard deviation of angular velocity magnitude
 
 Variable Label: meanoftbodygyrojerkmag-mean()    
-Format: num
+Format: num 
 Comment: mean of average jerk angular velocity magnitude
 
 Variable Label: meanoftbodygyrojerkmag-std()     
-Format: num 
+Format: num  
 Comment: mean of standard deviation of jerk angular velocity magnitude
 
 Variable Label: meanoffbodyacc-mean()-x          
-Format: num 
+Format: num  
 Comment: mean of average body acceleration in the x axis.
 
 Variable Label: meanoffbodyacc-mean()-y          
-Format: num  
+Format: num   
 Comment: mean of average body acceleration in the y axis.
 
 Variable Label: meanoffbodyacc-mean()-z          
-Format: num  
+Format: num   
 Comment: mean of average body acceleration in the z axis.
 
 Variable Label: meanoffbodyacc-std()-x           
-Format: num
+Format: num  
 Comment: mean of standard deviation of body acceleration in the x axis.
 
 Variable Label: meanoffbodyacc-std()-y           
-Format: num  
+Format: num   
 Comment: mean of standard deviation of body acceleration in the y axis.
 
 Variable Label: meanoffbodyacc-std()-z           
-Format: num  
+Format: num   
 Comment: mean of standard deviation of body acceleration in the z axis.
 
 Variable Label: meanoffbodyaccjerk-mean()-x      
-Format: num 
+Format: num  
 Comment: mean of average jerk acceleration in the x axis.
 
 Variable Label: meanoffbodyaccjerk-mean()-y      
-Format: num 
+Format: num  
 Comment: mean of average jerk acceleration in the y axis.
 
 Variable Label: meanoffbodyaccjerk-mean()-z      
-Format: num 
+Format: num  
 Comment: mean of average jerk acceleration in the z axis.
 
 Variable Label: meanoffbodyaccjerk-std()-x       
-Format: num  
+Format: num   
 Comment: mean of standard deviation of jerk acceleration in the x axis.
 
 Variable Label: meanoffbodyaccjerk-std()-y       
-Format: num 
+Format: num  
 Comment: mean of standard deviation of jerk acceleration in the y axis.
 
 Variable Label: meanoffbodyaccjerk-std()-z       
-Format: num  
+Format: num   
 Comment: mean of standard deviation of jerk acceleration in the z axis.
 
 Variable Label: meanoffbodygyro-mean()-x         
-Format: num 
+Format: num  
 Comment: mean of average body angular velocity in the x axis.
 
 Variable Label: meanoffbodygyro-mean()-y         
-Format: num 
+Format: num  
 Comment: mean of average body angular velocity in the y axis.
 
 Variable Label: meanoffbodygyro-mean()-z         
-Format: num 
+Format: num  
 Comment: mean of average body angular velocity in the z axis.
 
 Variable Label: meanoffbodygyro-std()-x          
-Format: num  
+Format: num   
 Comment: mean of standard deviation of body angular velocity in the x axis.
 
 Variable Label: meanoffbodygyro-std()-y          
-Format: num  
+Format: num   
 Comment: mean of standard deviation of body angular velocity in the y axis.
 
 Variable Label: meanoffbodygyro-std()-z          
-Format: num  
+Format: num   
 Comment: mean of standard deviation of body angular velocity in the z axis.
 
 Variable Label: meanoffbodyaccmag-mean()         
-Format: num 
+Format: num  
 Comment: mean of average body acceleration magnitude
 
 Variable Label: meanoffbodyaccmag-std()          
-Format: num 
+Format: num  
 Comment: mean of standard deviation of body acceleration magnitude
 
 Variable Label: meanoffbodybodyaccjerkmag-mean() 
-Format: num 
+Format: num  
 Comment: mean of average body jerk acceleration magnitude
 
 Variable Label: meanoffbodybodyaccjerkmag-std()  
-Format: num
+Format: num 
 Comment: mean of standard deviation of body jerk acceleration magnitude
 
 Variable Label: meanoffbodybodygyromag-mean()    
-Format: num 
+Format: num  
 Comment: mean of average body angular velocity magnitude
 
 Variable Label: meanoffbodybodygyromag-std()     
-Format: num 
+Format: num  
 Comment: mean of standard deviation of body angular velocity magnitude
 
 Variable Label: meanoffbodybodygyrojerkmag-mean()
-Format: num
+Format: num  
 Comment: mean of average body angular velocity jerk magnitude
 
 Variable Label: meanoffbodybodygyrojerkmag-std() 
-Format: num
+Format: num  
 Comment: mean of standard deviation of body angular velocity jerk magnitude
 
 
