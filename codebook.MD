@@ -16,7 +16,7 @@ Instructions: https://github.com/flambiase/Course3Project/blob/master/readme.R
 
 
 ###Output File
-https://github.com/flambiase/Course3Project/blob/master/averagemeasures.csv
+https://github.com/flambiase/Course3Project/blob/master/averagemeasures.txt
 
 ###Variables
 Variable Label: activity                         
