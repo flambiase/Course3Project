@@ -40,7 +40,7 @@ The 561-value measurement string field in the meas dataset is then parsed into a
 Finally, the aggregate function is used to summarize the raw data by the activity name and subject id, calculating the mean of each feature measurement. Column names are updated to indicate that each is the mean of the raw measurement. This final dataset is written to a CSV.
 
 ## Output data
-Location: https://github.com/flambiase/Course3Project/blob/master/averagemeasures.csv
+Location: https://github.com/flambiase/Course3Project/blob/master/averagemeasures.txt
 
 Code book detailing structure and contents: https://github.com/flambiase/Course3Project/blob/master/codebook.MD
 
