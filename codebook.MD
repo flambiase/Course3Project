@@ -1,90 +1,310 @@
 #UCI HAR Dataset Prep
 ## Code Book
 ###Introduction
+One of the most exciting areas in all of data science right now is wearable computing. Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. The UCI Human Activity Recognition (HAR) database was built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors.
 
 ###Study Design
+The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope,  3-axial linear acceleration and 3-axial angular velocity were captured at a constant rate of 50Hz. The experiments were video-recorded to label the data manually. The obtained dataset was randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
+
+The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. 
+
+Data collected included a 561-feature vector of time and frequency domain variables identified by subject and activity. Raw data output from these measurements was summarized to combine data for test and training subjects, calculating the means of each of the mean and standard deviation measure by subject id and activity label.
 
 ###Data Preparation
 Program: https://github.com/flambiase/Course3Project/blob/master/run_analysis.R
+Instructions: https://github.com/flambiase/Course3Project/blob/master/readme.R
 
 
 ###Output File
 https://github.com/flambiase/Course3Project/blob/master/averagemeasures.csv
 
 ###Variables
-Variable Label:
-Format:
-Units:
-Comments:
 
-'data.frame':	35 obs. of  68 variables:
- $ activity                         : Factor w/ 6 levels "LAYING","SITTING",..: 4 3 4 3 4 4 4 4 6 3 ...
- $ subjectid                        : int  1 2 3 4 5 6 7 8 8 9 ...
- $ meanoftbodyacc-mean()-x          : num  0.266 0.273 0.273 0.274 0.279 ...
- $ meanoftbodyacc-mean()-y          : num  -0.0183 -0.0191 -0.0179 -0.0148 -0.0155 ...
- $ meanoftbodyacc-mean()-z          : num  -0.108 -0.116 -0.106 -0.108 -0.106 ...
- $ meanoftbodyacc-std()-x           : num  -0.546 -0.606 -0.623 -0.605 -0.508 ...
- $ meanoftbodyacc-std()-y           : num  -0.368 -0.429 -0.48 -0.51 -0.403 ...
- $ meanoftbodyacc-std()-z           : num  -0.503 -0.589 -0.654 -0.709 -0.646 ...
- $ meanoftgravityacc-mean()-x       : num  0.745 0.661 0.708 0.707 0.698 ...
- $ meanoftgravityacc-mean()-y       : num  -0.0826 -0.1472 -0.0261 0.1126 0.1123 ...
- $ meanoftgravityacc-mean()-z       : num  0.0723 0.1349 0.0481 0.1641 0.0922 ...
- $ meanoftgravityacc-std()-x        : num  -0.96 -0.963 -0.966 -0.963 -0.965 ...
- $ meanoftgravityacc-std()-y        : num  -0.951 -0.96 -0.945 -0.941 -0.94 ...
- $ meanoftgravityacc-std()-z        : num  -0.926 -0.945 -0.927 -0.941 -0.942 ...
- $ meanoftbodyaccjerk-mean()-x      : num  0.0771 0.0785 0.0702 0.0789 0.0841 ...
- $ meanoftbodyaccjerk-mean()-y      : num  0.01659 0.00709 0.01447 0.00351 0.00177 ...
- $ meanoftbodyaccjerk-mean()-z      : num  -0.009108 0.000756 -0.000527 -0.007374 -0.002954 ...
- $ meanoftbodyaccjerk-std()-x       : num  -0.525 -0.558 -0.635 -0.632 -0.576 ...
- $ meanoftbodyaccjerk-std()-y       : num  -0.47 -0.492 -0.557 -0.584 -0.507 ...
- $ meanoftbodyaccjerk-std()-z       : num  -0.717 -0.742 -0.796 -0.843 -0.785 ...
- $ meanoftbodygyro-mean()-x         : num  -0.0209 -0.0517 -0.0248 -0.0289 -0.0295 ...
- $ meanoftbodygyro-mean()-y         : num  -0.0881 -0.0568 -0.0744 -0.0787 -0.0774 ...
- $ meanoftbodygyro-mean()-z         : num  0.0863 0.0873 0.0867 0.0957 0.0866 ...
- $ meanoftbodygyro-std()-x          : num  -0.687 -0.711 -0.699 -0.701 -0.71 ...
- $ meanoftbodygyro-std()-y          : num  -0.451 -0.723 -0.763 -0.798 -0.706 ...
- $ meanoftbodygyro-std()-z          : num  -0.597 -0.635 -0.709 -0.726 -0.607 ...
- $ meanoftbodygyrojerk-mean()-x     : num  -0.0971 -0.0876 -0.0992 -0.1079 -0.1035 ...
- $ meanoftbodygyrojerk-mean()-y     : num  -0.0417 -0.0434 -0.0402 -0.04 -0.0491 ...
- $ meanoftbodygyrojerk-mean()-z     : num  -0.0471 -0.0558 -0.0521 -0.0578 -0.0506 ...
- $ meanoftbodygyrojerk-std()-x      : num  -0.638 -0.672 -0.689 -0.724 -0.663 ...
- $ meanoftbodygyrojerk-std()-y      : num  -0.634 -0.784 -0.843 -0.903 -0.774 ...
- $ meanoftbodygyrojerk-std()-z      : num  -0.665 -0.675 -0.743 -0.748 -0.565 ...
- $ meanoftbodyaccmag-mean()         : num  -0.454 -0.535 -0.563 -0.562 -0.461 ...
- $ meanoftbodyaccmag-std()          : num  -0.497 -0.553 -0.591 -0.607 -0.522 ...
- $ meanoftgravityaccmag-mean()      : num  -0.454 -0.535 -0.563 -0.562 -0.461 ...
- $ meanoftgravityaccmag-std()       : num  -0.497 -0.553 -0.591 -0.607 -0.522 ...
- $ meanoftbodyaccjerkmag-mean()     : num  -0.545 -0.588 -0.65 -0.656 -0.589 ...
- $ meanoftbodyaccjerkmag-std()      : num  -0.516 -0.512 -0.608 -0.647 -0.589 ...
- $ meanoftbodygyromag-mean()        : num  -0.475 -0.615 -0.643 -0.656 -0.603 ...
- $ meanoftbodygyromag-std()         : num  -0.5 -0.681 -0.674 -0.707 -0.664 ...
- $ meanoftbodygyrojerkmag-mean()    : num  -0.64 -0.747 -0.784 -0.819 -0.707 ...
- $ meanoftbodygyrojerkmag-std()     : num  -0.652 -0.74 -0.804 -0.844 -0.734 ...
- $ meanoffbodyacc-mean()-x          : num  -0.532 -0.574 -0.626 -0.629 -0.551 ...
- $ meanoffbodyacc-mean()-y          : num  -0.406 -0.433 -0.502 -0.526 -0.44 ...
- $ meanoffbodyacc-mean()-z          : num  -0.596 -0.63 -0.7 -0.755 -0.696 ...
- $ meanoffbodyacc-std()-x           : num  -0.553 -0.62 -0.624 -0.598 -0.493 ...
- $ meanoffbodyacc-std()-y           : num  -0.39 -0.465 -0.503 -0.535 -0.422 ...
- $ meanoffbodyacc-std()-z           : num  -0.499 -0.601 -0.657 -0.709 -0.649 ...
- $ meanoffbodyaccjerk-mean()-x      : num  -0.547 -0.562 -0.646 -0.652 -0.605 ...
- $ meanoffbodyaccjerk-mean()-y      : num  -0.507 -0.509 -0.583 -0.602 -0.551 ...
- $ meanoffbodyaccjerk-mean()-z      : num  -0.695 -0.716 -0.78 -0.825 -0.769 ...
- $ meanoffbodyaccjerk-std()-x       : num  -0.544 -0.595 -0.658 -0.645 -0.584 ...
- $ meanoffbodyaccjerk-std()-y       : num  -0.466 -0.509 -0.56 -0.594 -0.492 ...
- $ meanoffbodyaccjerk-std()-z       : num  -0.738 -0.767 -0.811 -0.861 -0.799 ...
- $ meanoffbodygyro-mean()-x         : num  -0.623 -0.639 -0.642 -0.642 -0.632 ...
- $ meanoffbodygyro-mean()-y         : num  -0.505 -0.722 -0.775 -0.832 -0.717 ...
- $ meanoffbodygyro-mean()-z         : num  -0.554 -0.602 -0.671 -0.689 -0.537 ...
- $ meanoffbodygyro-std()-x          : num  -0.708 -0.735 -0.719 -0.722 -0.736 ...
- $ meanoffbodygyro-std()-y          : num  -0.43 -0.727 -0.759 -0.783 -0.702 ...
- $ meanoffbodygyro-std()-z          : num  -0.65 -0.683 -0.751 -0.767 -0.669 ...
- $ meanoffbodyaccmag-mean()         : num  -0.478 -0.515 -0.579 -0.602 -0.529 ...
- $ meanoffbodyaccmag-std()          : num  -0.59 -0.647 -0.663 -0.673 -0.594 ...
- $ meanoffbodybodyaccjerkmag-mean() : num  -0.499 -0.51 -0.605 -0.635 -0.573 ...
- $ meanoffbodybodyaccjerkmag-std()  : num  -0.542 -0.519 -0.616 -0.667 -0.613 ...
- $ meanoffbodybodygyromag-mean()    : num  -0.535 -0.7 -0.717 -0.746 -0.677 ...
- $ meanoffbodybodygyromag-std()     : num  -0.567 -0.725 -0.704 -0.733 -0.716 ...
- $ meanoffbodybodygyrojerkmag-mean(): num  -0.646 -0.752 -0.81 -0.839 -0.749 ...
- $ meanoffbodybodygyrojerkmag-std() : num  -0.686 -0.744 -0.81 -0.863 -0.736 ...
+Magnitude of three-dimensional signals
+frequency
+time
+xyz vectors
+Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
+
+gravityMean
+tBodyAccMean
+tBodyAccJerkMean
+tBodyGyroMean
+tBodyGyroJerkMean
+
+
+
+Variable Label: activity                         
+Format: Factor 
+Comments: Label identifying the activity being performed while measurements were recorded.
+
+Variable Label: subjectid                        
+Format: int  
+Comments: Identifies the subject performing the activity being measured.
+
+Variable Label: meanoftbodyacc-mean()-x          
+Format: num 
+Comment: Mean of average measurements of portion of acceleration attributable to subject movement along the x axis.
+
+Variable Label: meanoftbodyacc-mean()-y          
+Format: num 
+Comment: Mean of average measurements of portion of acceleration attributable to subject movement along the y axis.
+
+Variable Label: meanoftbodyacc-mean()-z          
+Format: num 
+Comment: Mean of average measurements of portion of acceleration attributable to subject movement along the z axis.
+
+Variable Label: meanoftbodyacc-std()-x           
+Format: num  
+Comment: Mean of standard deviation of measurements of portion of acceleration attributable to subject movement along the x axis.
+
+Variable Label: meanoftbodyacc-std()-y           
+Format: num 
+Comment: Mean of standard deviation of measurements of portion of acceleration attributable to subject movement along the y axis.
+
+Variable Label: meanoftbodyacc-std()-z           
+Format: num 
+Comment: Mean of standard deviation of measurements of portion of acceleration attributable to subject movement along the z axis.
+
+Variable Label: meanoftgravityacc-mean()-x       
+Format: num  
+Comment: Mean of average measurements of portion of acceleration attributable to gravity along the x axis.
+
+Variable Label: meanoftgravityacc-mean()-y       
+Format: num  
+Comment: Mean of average measurements of portion of acceleration attributable to gravity along the y axis.
+
+Variable Label: meanoftgravityacc-mean()-z       
+Format: num 
+Comment: Mean of average measurements of portion of acceleration attributable to gravity along the z axis.
+
+Variable Label: meanoftgravityacc-std()-x        
+Format: num  
+Comment: Mean of standard deviation of measurements of portion of acceleration attributable to gravity along the x axis.
+
+Variable Label: meanoftgravityacc-std()-y        
+Format: num  
+Comment: Mean of standard deviation of measurements of portion of acceleration attributable to gravity along the y axis.
+
+Variable Label: meanoftgravityacc-std()-z        
+Format: num  
+Comment: Mean of standard deviation of measurements of portion of acceleration attributable to gravity along the z axis.
+
+Variable Label: meanoftbodyaccjerk-mean()-x      
+Format: num 
+Comment: mean of average jerk signals measured by linear acceleration and angular velocity along the x axis.
+
+Variable Label: meanoftbodyaccjerk-mean()-y      
+Format: num  
+Comment: mean of average jerk signals measured by linear acceleration and angular velocity along the y axis.
+
+Variable Label: meanoftbodyaccjerk-mean()-z      
+Format: num  
+Comment: mean of average jerk signals measured by linear acceleration and angular velocity along the z axis.
+
+Variable Label: meanoftbodyaccjerk-std()-x       
+Format: num  
+Comment: mean of standard deviation of jerk signals measured by linear acceleration and angular velocity along the x axis.
+
+Variable Label: meanoftbodyaccjerk-std()-y       
+Format: num  
+Comment: mean of standard deviation of jerk signals measured by linear acceleration and angular velocity along the y axis.
+
+Variable Label: meanoftbodyaccjerk-std()-z       
+Format: num  
+Comment: mean of standard deviation of jerk signals measured by linear acceleration and angular velocity along the z axis.
+
+Variable Label: meanoftbodygyro-mean()-x         
+Format: num
+Comment: mean of average angular velocity along the x axis.
+
+Variable Label: meanoftbodygyro-mean()-y         
+Format: num  
+Comment: mean of average angular velocity along the x axis.
+
+Variable Label: meanoftbodygyro-mean()-z         
+Format: num  
+Comment: mean of average angular velocity along the x axis.
+
+Variable Label: meanoftbodygyro-std()-x          
+Format: num 
+Comment: mean of standard deviation of angular velocity along the x axis.
+
+Variable Label: meanoftbodygyro-std()-y          
+Format: num
+Comment: mean of standard deviation of angular velocity along the y axis.
+
+Variable Label: meanoftbodygyro-std()-z          
+Format: num  
+Comment: mean of standard deviation of angular velocity along the z axis.
+
+Variable Label: meanoftbodygyrojerk-mean()-x     
+Format: num 
+Comment: mean of average jerk signals along the x axis.
+
+Variable Label: meanoftbodygyrojerk-mean()-y     
+Format: num  
+Comment: mean of average jerk signals along the y axis.
+
+Variable Label: meanoftbodygyrojerk-mean()-z     
+Format: num  
+Comment: mean of average jerk signals along the z axis.
+
+Variable Label: meanoftbodygyrojerk-std()-x      
+Format: num 
+Comment: mean of standard deviation of jerk signals along the x axis.
+
+Variable Label: meanoftbodygyrojerk-std()-y      
+Format: num 
+Comment: mean of standard deviation of jerk signals along the y axis.
+
+Variable Label: meanoftbodygyrojerk-std()-z      
+Format: num  
+Comment: mean of standard deviation of jerk signals along the z axis.
+
+
+Variable Label: meanoftbodyaccmag-mean()         
+Format: num 
+Comment: mean of average body acceleration magnitude
+
+Variable Label: meanoftbodyaccmag-std()          
+Format: num  
+Comment: mean of standard deviation of body acceleration magnitude
+
+Variable Label: meanoftgravityaccmag-mean()      
+Format: num  
+Comment: mean of average gravity acceleration magnitude
+
+Variable Label: meanoftgravityaccmag-std()       
+Format: num  
+Comment: mean of standard deviation of gravity acceleration magnitude
+
+Variable Label: meanoftbodyaccjerkmag-mean()     
+Format: num 
+Comment: mean of average jerk acceleration magnitude 
+
+Variable Label: meanoftbodyaccjerkmag-std()      
+Format: num  
+Comment: mean of standard deviation of jerk acceleration magnitude 
+
+Variable Label: meanoftbodygyromag-mean()        
+Format: num  
+Comment: mean of average angular velocity magnitude
+
+Variable Label: meanoftbodygyromag-std()         
+Format: num 
+Comment: mean of standard deviation of angular velocity magnitude
+
+Variable Label: meanoftbodygyrojerkmag-mean()    
+Format: num
+Comment: mean of average jerk angular velocity magnitude
+
+Variable Label: meanoftbodygyrojerkmag-std()     
+Format: num 
+Comment: mean of standard deviation of jerk angular velocity magnitude
+
+Variable Label: meanoffbodyacc-mean()-x          
+Format: num 
+Comment: mean of average body acceleration in the x axis.
+
+Variable Label: meanoffbodyacc-mean()-y          
+Format: num  
+Comment: mean of average body acceleration in the y axis.
+
+Variable Label: meanoffbodyacc-mean()-z          
+Format: num  
+Comment: mean of average body acceleration in the z axis.
+
+Variable Label: meanoffbodyacc-std()-x           
+Format: num
+Comment: mean of standard deviation of body acceleration in the x axis.
+
+Variable Label: meanoffbodyacc-std()-y           
+Format: num  
+Comment: mean of standard deviation of body acceleration in the y axis.
+
+Variable Label: meanoffbodyacc-std()-z           
+Format: num  
+Comment: mean of standard deviation of body acceleration in the z axis.
+
+Variable Label: meanoffbodyaccjerk-mean()-x      
+Format: num 
+Comment: mean of average jerk acceleration in the x axis.
+
+Variable Label: meanoffbodyaccjerk-mean()-y      
+Format: num 
+Comment: mean of average jerk acceleration in the y axis.
+
+Variable Label: meanoffbodyaccjerk-mean()-z      
+Format: num 
+Comment: mean of average jerk acceleration in the z axis.
+
+Variable Label: meanoffbodyaccjerk-std()-x       
+Format: num  
+Comment: mean of standard deviation of jerk acceleration in the x axis.
+
+Variable Label: meanoffbodyaccjerk-std()-y       
+Format: num 
+Comment: mean of standard deviation of jerk acceleration in the y axis.
+
+Variable Label: meanoffbodyaccjerk-std()-z       
+Format: num  
+Comment: mean of standard deviation of jerk acceleration in the z axis.
+
+Variable Label: meanoffbodygyro-mean()-x         
+Format: num 
+Comment: mean of average body angular velocity in the x axis.
+
+Variable Label: meanoffbodygyro-mean()-y         
+Format: num 
+Comment: mean of average body angular velocity in the y axis.
+
+Variable Label: meanoffbodygyro-mean()-z         
+Format: num 
+Comment: mean of average body angular velocity in the z axis.
+
+Variable Label: meanoffbodygyro-std()-x          
+Format: num  
+Comment: mean of standard deviation of body angular velocity in the x axis.
+
+Variable Label: meanoffbodygyro-std()-y          
+Format: num  
+Comment: mean of standard deviation of body angular velocity in the y axis.
+
+Variable Label: meanoffbodygyro-std()-z          
+Format: num  
+Comment: mean of standard deviation of body angular velocity in the z axis.
+
+Variable Label: meanoffbodyaccmag-mean()         
+Format: num 
+Comment: mean of average body acceleration magnitude
+
+Variable Label: meanoffbodyaccmag-std()          
+Format: num 
+Comment: mean of standard deviation of body acceleration magnitude
+
+Variable Label: meanoffbodybodyaccjerkmag-mean() 
+Format: num 
+Comment: mean of average body jerk acceleration magnitude
+
+Variable Label: meanoffbodybodyaccjerkmag-std()  
+Format: num
+Comment: mean of standard deviation of body jerk acceleration magnitude
+
+Variable Label: meanoffbodybodygyromag-mean()    
+Format: num 
+Comment: mean of average body angular velocity magnitude
+
+Variable Label: meanoffbodybodygyromag-std()     
+Format: num 
+Comment: mean of standard deviation of body angular velocity magnitude
+
+Variable Label: meanoffbodybodygyrojerkmag-mean()
+Format: num
+Comment: mean of average body angular velocity jerk magnitude
+
+Variable Label: meanoffbodybodygyrojerkmag-std() 
+Format: num
+Comment: mean of standard deviation of body angular velocity jerk magnitude
 
 
