@@ -67,4 +67,4 @@ averagemeasures <-aggregate(f,
 colnames(averagemeasures) <- c("activity", "subjectid", paste("meanof", flbl, sep=""))
 
 # create output CSV
-write.csv(averagemeasures, file="averagemeasures.csv")
+write.table(averagemeasures, file="averagemeasures.txt", row.names=FALSE)
